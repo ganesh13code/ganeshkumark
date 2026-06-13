@@ -1,0 +1,223 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    scroll-behavior: smooth;
+}
+
+/* ===== HERO ===== */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #38bdf8;
+    filter: blur(120px);
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+    pointer-events: none;   /* ✅ IMPORTANT FIX */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* ✅ IMPORTANT FIX */
+}
+@keyframes float {
+    0%, 100% { transform: translateY(-20px); }
+    50% { transform: translateY(20px); }
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    color: #38bdf8;
+    margin-top: 10px;
+}
+
+.hero p {
+    opacity: 0.8;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(56,189,248,0.4);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(15,23,42,0.7);
+    backdrop-filter: blur(10px);
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    z-index: 1000;
+}
+
+.navbar a {
+    margin: 0 15px;
+    color: #e2e8f0;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: #38bdf8;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* ===== SECTION ===== */
+.section {
+    padding: 70px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: rgba(30,41,59,0.6);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* ===== JOURNEY CARDS SPECIAL ===== */
+.journey-card {
+    border-left: 3px solid #38bdf8;
+    position: relative;
+}
+
+.journey-card::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: #38bdf8;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #38bdf8;
+}
+
+/* ===== EXPERIENCE ===== */
+.experience-box {
+    background: rgba(30,41,59,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.duration {
+    color: #38bdf8;
+    font-size: 0.9rem;
+}
+
+/* ===== PROJECT ===== */
+.project-card ul {
+    padding-left: 20px;
+}
+
+/* ===== CONTACT ===== */
+#contact p {
+    margin: 10px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    opacity: 0.7;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.card, .section h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px !important;
+}
