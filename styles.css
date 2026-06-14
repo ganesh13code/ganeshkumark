@@ -147,23 +147,6 @@ h2 {
     gap: 20px;
 }
 
-/* ===== JOURNEY CARDS SPECIAL ===== */
-.journey-card {
-    border-left: 3px solid #38bdf8;
-    position: relative;
-}
-
-.journey-card::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 20px;
-    width: 10px;
-    height: 10px;
-    background: #38bdf8;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #38bdf8;
-}
 
 /* ===== EXPERIENCE ===== */
 .experience-box {
@@ -220,4 +203,64 @@ html {
 
 section {
     scroll-margin-top: 100px !important;
+}
+/* ===== JOURNEY TIMELINE (NEW) ===== */
+
+.timeline {
+    position: relative;
+    margin: 40px 0;
+    padding-left: 50px;
+    border-left: 2px solid #444;
+}
+
+.tl-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.tl-dot {
+    position: absolute;
+    left: -25px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background: #111;
+    border: 3px solid #38bdf8;
+    border-radius: 50%;
+}
+
+.tl-date {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+.tl-role {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e2e8f0;
+}
+
+.tl-company {
+    font-size: 15px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.tl-desc {
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+/* ===== REVEAL ANIMATION ===== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
