@@ -1,264 +1,618 @@
+at > /home/claude/index.html << 'HTMLEOF'
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh Kumar | QA Automation Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Kumar · QA Automation Engineer</title>
+  <meta name="description" content="QA Automation Engineer with 3+ years automating Adobe products at Qualitest. Selenium, Appium, Java, TestNG specialist." />
 
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
-    <header class="hero">
-  <div class="hero-content">
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">GK<span class="logo-dot">.</span></a>
 
-    <div class="badge">
-      🏆 HighQ Award Winner | QA Automation Excellence
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
 
-    <h1>Ganesh Kumar</h1>
-
-    <h2>QA Automation Engineer</h2>
-
-    <h3>3.10 Years | Selenium | Java | TestNG | Appium</h3>
-
-    <p>
-      I design automation frameworks that reduce regression time,
-      improve release confidence, and scale with fast-moving products.
-    </p>
-
-    <div class="impact">
-      <span>↓ 30% Manual Effort</span>
-      <span>⚡ Faster Regression</span>
-      <span>🐞 400+ Bugs Prevented</span>
-    </div>
-
-    <div class="hero-buttons">
-      <a href="#project" class="btn primary">View Framework</a>
-      <a href="https://github.com/ganesh13code/selenium-automation-framework" target="_blank" class="btn ghost">GitHub</a>
-      <a href="ganeshkumar_resume.pdf" target="_blank" class="btn ghost">Resume</a>
-    </div>
-
-  </div>
-</header>
-
-    <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#journey">Journey</a> <!-- NEW -->
-        <a href="#experience">Experience</a> <!-- NEW -->
-        <a href="#project">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="card">
-            <p>
-                I'm a QA Automation Engineer with 3.10 years of experience designing scalable test automation frameworks
-                for web and mobile platforms. Specializing in Selenium, Appium, and Java, I build hybrid frameworks that
-                turn manual testing bottlenecks into fast, reliable, CI/CD-integrated suites — supporting products used
-                across 20+ locales. At Qualitest, I've cut manual testing effort by 30%, reduced framework maintenance
-                and onboarding time by up to 30%, and helped pioneer Gen AI-assisted test design for repetitive
-                regression flows. I was recognized with the HighQ Award for consistently delivering high-quality
-                releases. I'm passionate about building automation that doesn't just catch bugs — it scales with the
-                product and the team.
-            </p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="grid">
-            <div class="card">Java</div>
-            <div class="card">Selenium</div>
-            <div class="card">Appium</div>
-            <div class="card">TestNG</div>
-            <div class="card">POM</div>
-            <div class="card">Maven</div>
-            <div class="card">Git</div>
-            <div class="card">CI/CD</div>
-        </div>
-    </section>
-
-    <section id="journey" class="section">
-    <h2>Journey</h2>
-
-    <div class="timeline">
-
-        <!-- Role 1 -->
-        <div class="tl-item">
-            <div class="tl-dot"></div>
-            <div class="tl-date">Sep 2022 — Dec 2022</div>
-            <div class="tl-role">QA Intern</div>
-            <div class="tl-company">Qualitest Group</div>
-            <div class="tl-desc">
-                Kicked off my career with Functional Testing, building a strong foundation in Core Java.
-                Gained hands-on experience understanding application workflows, writing test cases,
-                and identifying defects in real-world projects.
-            </div>
-        </div>
-
-        <!-- Role 2 -->
-        <div class="tl-item">
-            <div class="tl-dot" style="border-color: purple;"></div>
-            <div class="tl-date">Jan 2023 — Jun 2023</div>
-            <div class="tl-role">Graduate Engineer — QA</div>
-            <div class="tl-company">Qualitest Group</div>
-            <div class="tl-desc">
-                Worked in Agile sprints — participated in planning, stand-ups, and retrospectives.
-                Performed Manual Testing including Regression, Smoke, and Sanity testing.
-                Contributed to defect tracking and ensured quality delivery within sprint timelines.
-            </div>
-        </div>
-
-        <!-- Role 3 -->
-        <div class="tl-item">
-            <div class="tl-dot" style="border-color: green;"></div>
-            <div class="tl-date">Jul 2023 — Present</div>
-            <div class="tl-role">Quality Engineer — Automation</div>
-            <div class="tl-company">Qualitest Group</div>
-            <div class="tl-desc">
-                Transitioned to Automation using Selenium, Appium, and Java. Designed and developed
-                scalable frameworks with POM, PageFactory, and reusable components. Improved test efficiency
-                and contributed to faster, more reliable releases.
-                <br><br>
-                <strong>🏆 Received HighQ Award for outstanding performance.</strong>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-
-        <div class="experience-box">
-
-            <h3>QA Automation Engineer – Qualitest</h3>
-            <p class="duration">Sep 2022 – Present (3.10 Years)</p>
-
-            <ul>
-                <li>Designed and developed scalable automation frameworks using Selenium WebDriver, Java, and TestNG.
-                </li>
-                <li>Built hybrid framework architecture with POM, PageFactory, BaseTest, and reusable utilities.</li>
-                <li>Implemented synchronization using Explicit Waits and FluentWait to improve test stability.</li>
-                <li>Integrated Extent Reports for detailed reporting and debugging.</li>
-                <li>Worked on mobile automation using Appium for cross-platform testing.</li>
-                <li>Contributed to Cypress-based automation using JavaScript for modern web applications.</li>
-                <li>Improved regression efficiency and reduced manual testing effort.</li>
-            </ul>
-
-            <h4>Key Projects</h4>
-
-            <ul class="projects">
-                <li>
-                    <strong>Adobe Acrobat (Web, iOS & Android)</strong> –
-                    Automated critical document workflows such as PDF viewing, editing, and sharing using Appium.
-                    Improved regression coverage and ensured stable releases across multiple devices and OS versions.
-                </li>
-
-                <li>
-                    <strong>Adobe Photoshop (iOS)</strong> –
-                    Validated core image editing features including filters, layers, and export functionality.
-                    Designed test scenarios to ensure UI consistency and performance for creative workflows.
-                </li>
-
-                <li>
-                    <strong>Adobe Express (Android & iOS)</strong> –
-                    Automated end-to-end user journeys like template selection, design editing, and content publishing.
-                    Focused on cross-platform testing and improving test reliability for frequent feature releases.
-                </li>
-            </ul>
-
-            <h4>Achievements & Recognition</h4>
-
-           <div class="card">
-    <strong>🏆 HighQ Award – Performance & Contribution in QA Project</strong>
-
-    <p>
-        Received the HighQ Award in recognition of outstanding performance and significant contribution to QA automation project delivery. 
-        This award highlights consistent commitment to quality, ownership, and impact in improving testing efficiency and release stability.
-    </p>
-
-    <a href="highq-award-certificate.pdf" target="_blank" class="btn">
-        View Certificate
+    <a href="ganeshkumar_resume.pdf" target="_blank" class="btn btn-primary btn-sm nav-cta">
+      <i class="fas fa-download"></i> Resume
     </a>
-</div>
 
+    <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about"      onclick="closeMenu()">About</a>
+    <a href="#skills"     onclick="closeMenu()">Skills</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#projects"   onclick="closeMenu()">Projects</a>
+    <a href="#contact"    onclick="closeMenu()">Contact</a>
+    <a href="ganeshkumar_resume.pdf" target="_blank" class="btn btn-primary" onclick="closeMenu()">
+      <i class="fas fa-download"></i> Download Resume
+    </a>
+  </div>
+
+  <!-- Copy Toast -->
+  <div class="copy-toast" id="copyToast">
+    <i class="fas fa-check-circle"></i> Copied to clipboard!
+  </div>
+
+
+  <!-- ═══ HERO ═══ -->
+  <header class="hero" id="hero">
+    <div class="hero-inner">
+
+      <!-- Left: Text -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to new opportunities
         </div>
 
-    </section>
+        <h1 class="hero-name">
+          Ganesh<br /><span class="accent">Kumar</span>
+        </h1>
 
-    <section id="project" class="section">
-        <h2>Projects</h2>
-        <div class="card project-card">
-            <h3>Selenium Hybrid Automation Framework</h3>
-            <p>Designed scalable automation framework with reusable components and reporting.</p>
+        <p class="hero-title">QA Automation Engineer</p>
 
+        <p class="hero-sub">
+          3+ years automating <strong>Adobe's flagship products</strong> at Qualitest
+          across 20+ locales — web, iOS &amp; Android.
+        </p>
 
-            <ul>
-                <li>POM + PageFactory</li>
-                <li>BaseTest & BasePage</li>
-                <li>Test Cases</li>
-                <li>FluentWait handling</li>
-                <li>ExplicitWait handling</li>
-                <li>Extent Reports</li>
-                <li>Screenshots</li>
-                <li>Log4j</li>
-
-            </ul>
-
-            <a href="https://github.com/ganesh13code/selenium-automation-framework" target="_blank" class="btn">
-                View GitHub
-            </a>
+        <div class="hero-pills">
+          <div class="pill pill-green">
+            <i class="fas fa-check-circle"></i> 30% regression effort saved
+          </div>
+          <div class="pill pill-blue">
+            <i class="fas fa-globe"></i> 20+ locales covered
+          </div>
+          <div class="pill pill-gold">
+            <i class="fas fa-trophy"></i> HighQ Award winner
+          </div>
         </div>
 
-    </section>
-
-    <section id="resume" class="section">
-        <h2>Resume</h2>
-
-        <div class="card">
-            <p>You can view or download my resume below:</p>
-
-            <a href="ganeshkumar_resume.pdf" target="_blank" class="btn">
-                View Resume
-            </a>
-
-            <a href="ganeshkumar_resume.pdf" download class="btn" style="margin-left:10px;">
-                Download Resume
-            </a>
+        <div class="hero-buttons">
+          <a href="#experience" class="btn btn-primary">
+            See My Work <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="https://github.com/ganesh13code/selenium-automation-framework" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="ganeshkumar_resume.pdf" target="_blank" class="btn btn-outline">
+            <i class="fas fa-file-lines"></i> Resume
+          </a>
         </div>
-    </section>
+      </div>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: ganeshkumark1325@gmail.com</p>
-            <p>Phone: +919789524985</p>
-            <a href="https://www.linkedin.com/in/ganeshkumar-13/" target="_blank" class="btn primary">
-    View LinkedIn Profile
-            </a>
+      <!-- Right: Test Results Card -->
+      <div class="hero-right">
+        <div class="results-card">
+          <div class="rc-header">
+            <div class="rc-header-left">
+              <div class="rc-traffic">
+                <span class="rc-dot rc-red"></span>
+                <span class="rc-dot rc-yellow"></span>
+                <span class="rc-dot rc-green"></span>
+              </div>
+              <span class="rc-filename">RegressionSuite.xml</span>
+            </div>
+            <div class="rc-pass-badge">✓ PASSED</div>
+          </div>
+
+          <div class="rc-stats-row">
+            <div class="rc-stat">
+              <div class="rc-stat-num">4 / 4</div>
+              <div class="rc-stat-label">Tests Passed</div>
+            </div>
+            <div class="rc-divider"></div>
+            <div class="rc-stat">
+              <div class="rc-stat-num">94%</div>
+              <div class="rc-stat-label">Coverage</div>
+            </div>
+            <div class="rc-divider"></div>
+            <div class="rc-stat">
+              <div class="rc-stat-num">6.0s</div>
+              <div class="rc-stat-label">Execution</div>
+            </div>
+          </div>
+
+          <div class="rc-tests" id="rcTests">
+            <!-- Populated by script.js -->
+          </div>
+
+          <div class="rc-footer">
+            <span class="rc-env"><i class="fab fa-chrome"></i> ChromeDriver 120</span>
+            <span class="rc-env"><i class="fas fa-mobile-screen-button"></i> Appium 2.x</span>
+            <span class="rc-env"><i class="fas fa-leaf"></i> Cypress 13</span>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <p>© 2026 Ganesh Kumar</p>
-    </footer>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
 
+  <!-- ═══ STAT STRIP ═══ -->
+  <div class="stat-strip">
+    <div class="stat-strip-inner">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-num" data-target="30" data-suffix="%">0</div>
+        <div class="stat-label">Regression Effort Saved</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-num" data-target="20" data-suffix="+">0</div>
+        <div class="stat-label">Locales Automated</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Adobe Products</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">About</p>
+      <h2 class="section-title">I build automation<br />that scales with your team</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>QA Automation Engineer with 3+ years of experience</strong> designing
+          scalable test automation frameworks for web and mobile platforms.
+          Specializing in <strong>Selenium, Appium, and Java</strong>, I build hybrid frameworks
+          that turn manual testing bottlenecks into fast, reliable, CI/CD-integrated suites.
+        </p>
+        <p>
+          At Qualitest, I've worked on <strong>Adobe's flagship products</strong> — Acrobat,
+          Photoshop, and Express — across 20+ locales, cutting manual effort by 30% and reducing
+          framework onboarding time by up to 30%.
+        </p>
+        <p>
+          I pioneered <strong>Gen AI-assisted test design</strong> for repetitive regression flows
+          and was recognized with the <strong>HighQ Award</strong> for consistently delivering
+          high-quality releases.
+        </p>
+
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/ganeshkumar-13/" target="_blank" class="about-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/ganesh13code" target="_blank" class="about-link">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <!-- Email with visible address + copy button -->
+          <div class="about-email-wrap">
+            <a href="mailto:ganeshkumark1325@gmail.com" class="about-link">
+              <i class="fas fa-envelope"></i> ganeshkumark1325@gmail.com
+            </a>
+            <button
+              class="copy-inline-btn"
+              data-copy="ganeshkumark1325@gmail.com"
+              aria-label="Copy email address"
+              title="Copy email"
+            ><i class="fas fa-copy"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-cards reveal reveal-delay-1">
+        <div class="about-card">
+          <div class="ac-icon"><i class="fas fa-code-branch"></i></div>
+          <div>
+            <div class="ac-title">Framework Architecture</div>
+            <div class="ac-desc">Hybrid POM + PageFactory built from scratch for scale and maintainability.</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="ac-icon"><i class="fas fa-mobile-screen"></i></div>
+          <div>
+            <div class="ac-title">Cross-Platform Mobile</div>
+            <div class="ac-desc">iOS & Android automation with Appium across Adobe's mobile suite.</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="ac-icon"><i class="fas fa-robot"></i></div>
+          <div>
+            <div class="ac-title">AI-Assisted Testing</div>
+            <div class="ac-desc">Pioneered Gen AI-assisted test design for repetitive regression flows.</div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="ac-icon"><i class="fas fa-infinity"></i></div>
+          <div>
+            <div class="ac-title">CI/CD Integration</div>
+            <div class="ac-desc">Automated pipelines that give teams confidence to ship faster.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="section section-alt" id="skills">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Skills</p>
+      <h2 class="section-title">Technical Stack</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="sg-icon"><i class="fas fa-vial"></i></div>
+        <div class="sg-title">Test Automation</div>
+        <div class="sg-tags">
+          <span class="stag stag-primary">Selenium WebDriver</span>
+          <span class="stag stag-primary">Appium</span>
+          <span class="stag">TestNG</span>
+          <span class="stag">REST Assured</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="sg-icon"><i class="fas fa-code"></i></div>
+        <div class="sg-title">Languages</div>
+        <div class="sg-tags">
+          <span class="stag stag-primary">Java</span>
+          <span class="stag">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="sg-icon"><i class="fas fa-layer-group"></i></div>
+        <div class="sg-title">Frameworks & Patterns</div>
+        <div class="sg-tags">
+          <span class="stag">Page Object Model</span>
+          <span class="stag">PageFactory</span>
+          <span class="stag">BaseTest</span>
+          <span class="stag">Data-Driven</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="sg-icon"><i class="fas fa-chart-bar"></i></div>
+        <div class="sg-title">Reporting & Logging</div>
+        <div class="sg-tags">
+          <span class="stag">Extent Reports</span>
+          <span class="stag">Log4j</span>
+          <span class="stag">Allure</span>
+          <span class="stag">Screenshots on Failure</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="sg-icon"><i class="fas fa-infinity"></i></div>
+        <div class="sg-title">Build & CI/CD</div>
+        <div class="sg-tags">
+          <span class="stag">Maven</span>
+          <span class="stag">Jenkins</span>
+          <span class="stag">GitHub Actions</span>
+          <span class="stag">Git</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="sg-icon"><i class="fas fa-tools"></i></div>
+        <div class="sg-title">Tools & Platforms</div>
+        <div class="sg-tags">
+          <span class="stag">JIRA</span>
+          <span class="stag">Postman</span>
+          <span class="stag">iOS</span>
+          <span class="stag">Android</span>
+          <span class="stag">Cross-browser</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section class="section" id="experience">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Experience</p>
+      <h2 class="section-title">Where I've made an impact</h2>
+    </div>
+
+    <!-- Career Timeline -->
+    <div class="career-timeline reveal">
+      <div class="ct-item">
+        <div class="ct-dot"></div>
+        <div class="ct-content">
+          <div class="ct-period">Sep 2022 – Dec 2022</div>
+          <div class="ct-role">QA Intern</div>
+          <div class="ct-company">Qualitest Group</div>
+        </div>
+      </div>
+      <div class="ct-item">
+        <div class="ct-dot"></div>
+        <div class="ct-content">
+          <div class="ct-period">Jan 2023 – Jun 2023</div>
+          <div class="ct-role">Graduate Engineer — QA</div>
+          <div class="ct-company">Qualitest Group</div>
+        </div>
+      </div>
+      <div class="ct-item ct-item-current">
+        <div class="ct-dot ct-dot-current"></div>
+        <div class="ct-content">
+          <div class="ct-period">Jul 2023 – Present</div>
+          <div class="ct-role">Quality Engineer — Automation</div>
+          <div class="ct-company">Qualitest Group</div>
+          <span class="ct-badge">Current</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Experience Card -->
+    <div class="exp-card reveal">
+
+      <div class="exp-top">
+        <div class="exp-identity">
+          <div class="exp-company-logo"><i class="fas fa-building"></i></div>
+          <div>
+            <div class="exp-role-title">QA Automation Engineer</div>
+            <div class="exp-company-name">Qualitest Group &middot; Bengaluru, India</div>
+          </div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-active-badge"><span class="badge-dot"></span> Active</div>
+          <div class="exp-dates">Sep 2022 – Present · 3+ yrs</div>
+        </div>
+      </div>
+
+      <!-- Impact Metrics -->
+      <div class="exp-impact">
+        <div class="ei-item">
+          <div class="ei-num">30%</div>
+          <div class="ei-label">Manual effort reduced</div>
+        </div>
+        <div class="ei-item">
+          <div class="ei-num">65%</div>
+          <div class="ei-label">Automation Coverage</div>
+        </div>
+        <div class="ei-item">
+          <div class="ei-num">20+</div>
+          <div class="ei-label">Locales automated</div>
+        </div>
+        <div class="ei-item">
+          <div class="ei-num">3</div>
+          <div class="ei-label">Adobe apps</div>
+        </div>
+      </div>
+
+      <div class="exp-sep"></div>
+
+      <div class="exp-sub-label">Responsibilities</div>
+      <ul class="exp-list">
+        <li>Designed <strong>scalable hybrid automation frameworks</strong> (Selenium, Java, TestNG) covering web and mobile — reducing regression cycle time by 30%.</li>
+        <li>Built <strong>POM + PageFactory + BaseTest architecture</strong> with reusable utilities, cutting new engineer onboarding time by 30%.</li>
+        <li>Eliminated flaky failures in dynamic UIs by implementing <strong>FluentWait and Explicit Wait</strong> synchronization strategies.</li>
+        <li>Integrated <strong>Extent Reports + Log4j</strong> for rich test reporting and traceability across the team.</li>
+        <li>Led <strong>cross-platform mobile automation</strong> with Appium — iOS and Android across Adobe's product suite.</li>
+        <li>Pioneered <strong>Gen AI-assisted test case generation</strong> for repetitive regression flows, reducing authoring time significantly.</li>
+      </ul>
+
+      <div class="exp-sep"></div>
+
+      <div class="exp-sub-label">Key Client Projects · Adobe</div>
+      <div class="adobe-grid">
+        <div class="adobe-card">
+          <div class="adobe-product-icon adobe-red"><i class="fas fa-file-pdf"></i></div>
+          <div class="adobe-product-name">Adobe Acrobat</div>
+          <div class="adobe-platforms">Web · iOS · Android</div>
+          <p class="adobe-desc">Automated critical PDF workflows — viewing, editing, and sharing with Appium. Improved regression coverage across devices and OS versions.</p>
+        </div>
+        <div class="adobe-card">
+          <div class="adobe-product-icon adobe-purple"><i class="fas fa-wand-magic-sparkles"></i></div>
+          <div class="adobe-product-name">Adobe Photoshop</div>
+          <div class="adobe-platforms">iOS</div>
+          <p class="adobe-desc">Validated filters, layers, and export workflows. Designed test scenarios for UI consistency and creative workflow performance.</p>
+        </div>
+        <div class="adobe-card">
+          <div class="adobe-product-icon adobe-blue"><i class="fas fa-pen-nib"></i></div>
+          <div class="adobe-product-name">Adobe Express</div>
+          <div class="adobe-platforms">Android · iOS</div>
+          <p class="adobe-desc">Automated end-to-end journeys: template selection, design editing, and content publishing. Cross-platform reliability for frequent releases.</p>
+        </div>
+      </div>
+
+      <div class="exp-sep"></div>
+
+      <!-- Award -->
+      <div class="award-card">
+        <div class="award-icon-wrap">🏆</div>
+        <div class="award-body">
+          <div class="award-title">HighQ Award — Performance &amp; Contribution in QA</div>
+          <p class="award-desc">
+            Qualitest's HighQ Award for outstanding performance and significant contribution to QA automation
+            delivery — consistent quality, ownership, and measurable impact on testing efficiency and release stability.
+          </p>
+          <a href="highq-award-certificate.pdf" target="_blank" class="btn btn-outline btn-sm award-btn">
+            <i class="fas fa-certificate"></i> View Certificate
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="section section-alt" id="projects">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Open Source</p>
+      <h2 class="section-title">Featured Project</h2>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="proj-header">
+        <div class="proj-icon-wrap"><i class="fas fa-flask-vial"></i></div>
+        <a
+          href="https://github.com/ganesh13code/selenium-automation-framework"
+          target="_blank"
+          class="btn btn-outline btn-sm"
+        >
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <h3 class="proj-name">Selenium Hybrid Automation Framework</h3>
+      <p class="proj-desc">
+        A production-grade, reusable automation framework built with Selenium WebDriver, Java, and TestNG.
+        Designed for scalability, maintainability, and team adoption — from a single test to an enterprise suite.
+      </p>
+
+      <div class="proj-tech">
+        <span class="tech-tag"><i class="fab fa-java"></i> Java</span>
+        <span class="tech-tag">Selenium</span>
+        <span class="tech-tag">TestNG</span>
+        <span class="tech-tag">Maven</span>
+      </div>
+
+      <div class="proj-features">
+        <div class="pf-col">
+          <div class="pf-item"><i class="fas fa-check"></i> Page Object Model + PageFactory</div>
+          <div class="pf-item"><i class="fas fa-check"></i> BaseTest & BasePage architecture</div>
+          <div class="pf-item"><i class="fas fa-check"></i> FluentWait & Explicit synchronization</div>
+        </div>
+        <div class="pf-col">
+          <div class="pf-item"><i class="fas fa-check"></i> Extent Reports + Log4j logging</div>
+          <div class="pf-item"><i class="fas fa-check"></i> Screenshots on failure</div>
+          <div class="pf-item"><i class="fas fa-check"></i> Maven build integration</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="section" id="contact">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Contact</p>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-sub reveal">
+        Open to QA Automation Engineer roles, contract work, and consulting opportunities.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Email — open mail + copy button -->
+      <div class="contact-card reveal">
+        <div class="cc-icon cc-email"><i class="fas fa-envelope"></i></div>
+        <div class="cc-body">
+          <div class="cc-label">Email</div>
+          <a href="mailto:ganeshkumark1325@gmail.com" class="cc-value cc-link">
+            ganeshkumark1325@gmail.com
+          </a>
+        </div>
+        <button
+          class="cc-copy-btn"
+          data-copy="ganeshkumark1325@gmail.com"
+          aria-label="Copy email address"
+          title="Copy email"
+        ><i class="fas fa-copy"></i></button>
+      </div>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/ganeshkumar-13/" target="_blank" class="contact-card reveal reveal-delay-1">
+        <div class="cc-icon cc-linkedin"><i class="fab fa-linkedin-in"></i></div>
+        <div class="cc-body">
+          <div class="cc-label">LinkedIn</div>
+          <div class="cc-value">ganeshkumar-13</div>
+        </div>
+        <i class="fas fa-arrow-right cc-arrow"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/ganesh13code" target="_blank" class="contact-card reveal reveal-delay-2">
+        <div class="cc-icon cc-github"><i class="fab fa-github"></i></div>
+        <div class="cc-body">
+          <div class="cc-label">GitHub</div>
+          <div class="cc-value">ganesh13code</div>
+        </div>
+        <i class="fas fa-arrow-right cc-arrow"></i>
+      </a>
+
+      <!-- Phone — call + copy button -->
+      <div class="contact-card reveal reveal-delay-3">
+        <div class="cc-icon cc-phone"><i class="fas fa-phone"></i></div>
+        <div class="cc-body">
+          <div class="cc-label">Phone</div>
+          <a href="tel:+919789524985" class="cc-value cc-link">+91 97895 24985</a>
+        </div>
+        <button
+          class="cc-copy-btn"
+          data-copy="+919789524985"
+          aria-label="Copy phone number"
+          title="Copy number"
+        ><i class="fas fa-copy"></i></button>
+      </div>
+
+    </div>
+
+    <div class="resume-cta reveal">
+      <p>Want everything in one document?</p>
+      <div class="resume-cta-btns">
+        <a href="ganeshkumar_resume.pdf" target="_blank" class="btn btn-primary">
+          <i class="fas fa-eye"></i> View Resume
+        </a>
+        <a href="ganeshkumar_resume.pdf" download class="btn btn-outline">
+          <i class="fas fa-download"></i> Download PDF
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">GK<span class="logo-dot">.</span></span>
+      <p>© 2026 Ganesh Kumar · QA Automation Engineer</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/ganeshkumar-13/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ganesh13code" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:ganeshkumark1325@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
+HTMLEOF
+echo "Done"
