@@ -158,3 +158,27 @@ document.querySelectorAll('[data-copy]').forEach((el) => {
     }
   });
 });
+/* ─── FIX: STAT COUNTER NOT WORKING ON GITHUB ───────────────── */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-num");
+
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const suffix = counter.getAttribute("data-suffix") || "";
+      const current = +counter.innerText;
+
+      const increment = target / 100;
+
+      if (current < target) {
+        counter.innerText = Math.ceil(current + increment) + suffix;
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target + suffix;
+      }
+    };
+
+    updateCount();
+  });
+});
